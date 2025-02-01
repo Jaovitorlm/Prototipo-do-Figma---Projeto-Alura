@@ -31,6 +31,20 @@ body {
     gap: 40px;
 }
 
+.raposinha {
+    position: absolute;
+    bottom: 25px;
+    right: 50px;
+    width: 150px;
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+}
+
+.raposinha:hover {
+    filter: brightness(1.5);
+    transform: scale(1.1);
+}
+
 .apresentacao__conteudo__titulo {
     font-family: "Krona One", serif;
     font-size: 36px;
