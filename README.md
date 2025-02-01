@@ -21,4 +21,4 @@ Este projeto foi criado para praticar e aprimorar habilidades em desenvolvimento
 ## 📂 Como Usar  
 Basta acessar o link abaixo:  
 
-🔗 [**Acesse o projeto no Vercel**]([https://seu-link-aqui.vercel.app/](https://prototipo-do-figma-projeto-alura.vercel.app/))
+🔗 [**Acesse o projeto no Vercel**](https://prototipo-do-figma-projeto-alura.vercel.app/)
