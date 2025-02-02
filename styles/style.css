@@ -15,12 +15,12 @@
 body {
     height: 100vh;
     box-sizing: border-box;
-    background-color: #030d9d;
-    color: #ade5f6; 
+    background-color: var(--fundo-principal);
+    color: var(--textos-e-botoes-hover); 
 }
 
 .destaqueTitulo {
-    color: rgb(245, 209, 3);
+    color: var(--marcacoes-de-texto);
 }
 
 .apresentacao {
@@ -66,7 +66,7 @@ body {
 }
 
 .apresentacao__conteudo__texto strong {
-    color: rgb(245, 209, 3);
+    color: var(--marcacoes-de-texto);
 }
 
 .apresentacao__links {
@@ -88,14 +88,14 @@ body {
     /*background-color: rgb(245, 209, 3);*/
     display: flex;
     justify-content: center;
-    border: 3px solid rgb(245, 209, 3);
+    border: 3px solid var(--marcacoes-de-texto);
     width: 300px;
     text-align: center;
     border-radius: 30px;
     font-size: 24px;
     padding: 21.5px 0;
     text-decoration: none;
-    color: rgb(245, 209, 3);
+    color: var(--marcacoes-de-texto);
     font-family: "Montserrat", serif;
     font-weight: 600;
     transition: 0.3s ease-in-out;
@@ -109,8 +109,8 @@ body {
 }
 
 .apresentacao__links__link:hover {
-    background-color: #ade5f6;
-    color: #030d9d;
+    background-color: var(--textos-e-botoes-hover);
+    color: var(--fundo-principal);
     transform: scale(1.05);
 }
 
@@ -124,7 +124,7 @@ body {
     width: 100%;
     padding: 24px;
     text-align: center;
-    color: rgb(245, 209, 3);
+    color: var(--marcacoes-de-texto);
     font-family: "Montserrat", serif;
     gap: 10px; 
     font-size: 12px;
@@ -148,7 +148,7 @@ body {
     left: 0;
     width: 80px; /* Ajuste conforme necessário */
     height: 100vh;
-    background-color: #1b65b5;
+    background-color: var(--fundo-sidebar);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -169,7 +169,7 @@ body {
 
 .sidebar nav ul li a {
     text-decoration: none;
-    color: #ade5f6;
+    color: var(--textos-e-botoes-hover);
     font-family: "Montserrat", serif;
     font-size: 22px;
     writing-mode: vertical-rl;  /*Roda o texto na vertical */
@@ -178,7 +178,7 @@ body {
 }
 
 .sidebar nav ul li a:hover {
-    color: #ade5f6;
+    color: var(--textos-e-botoes-hover);
 }
 
 .informacoes-container {
@@ -195,8 +195,8 @@ body {
 }
 
 .btn-experiencias, .btn-educacao {
-    background-color: rgb(245, 209, 3);
-    color: #030d9d;
+    background-color: var(--marcacoes-de-texto);
+    color: var(--fundo-principal);
     font-family: "Montserrat", serif;
     font-size: 18px;
     padding: 10px 20px;
@@ -208,15 +208,15 @@ body {
 }
 
 .btn-experiencias:hover, .btn-educacao:hover {
-    background-color: #ade5f6;
-    color: #030d9d;
+    background-color: var(--textos-e-botoes-hover);
+    color: var(--fundo-principal);
 }
 
 .experiencias-conteudo, .educacao-conteudo {
     display: none;
     position: absolute;
-    background-color: #1b65b5;
-    color: #ade5f6;
+    background-color: var(--fundo-sidebar);
+    color: var(--textos-e-botoes-hover);
     width: 300px;
     border-radius: 8px;
     padding: 10px;
