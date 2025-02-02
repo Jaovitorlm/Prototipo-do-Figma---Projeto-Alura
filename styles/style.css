@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    --fundo-principal: #030d9d;
+    --fundo-sidebar: #1b65b5;
+    --textos-e-botoes-hover: #ade5f6;
+    --marcacoes-de-texto: rgb(245, 209, 3);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +16,7 @@ body {
     height: 100vh;
     box-sizing: border-box;
     background-color: #030d9d;
-    color: whitesmoke; 
+    color: #ade5f6; 
 }
 
 .destaqueTitulo {
@@ -102,7 +109,7 @@ body {
 }
 
 .apresentacao__links__link:hover {
-    background-color: white;
+    background-color: #ade5f6;
     color: #030d9d;
     transform: scale(1.05);
 }
@@ -171,7 +178,7 @@ body {
 }
 
 .sidebar nav ul li a:hover {
-    color: whitesmoke;
+    color: #ade5f6;
 }
 
 .informacoes-container {
@@ -201,7 +208,7 @@ body {
 }
 
 .btn-experiencias:hover, .btn-educacao:hover {
-    background-color: white;
+    background-color: #ade5f6;
     color: #030d9d;
 }
 
