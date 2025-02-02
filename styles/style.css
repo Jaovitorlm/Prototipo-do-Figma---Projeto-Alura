@@ -8,7 +8,7 @@
 body {
     height: 100vh;
     box-sizing: border-box;
-    background-color: #030d9ded;
+    background-color: #030d9d;
     color: whitesmoke; 
 }
 
@@ -56,6 +56,10 @@ body {
     font-family:"Montserrat", serif;
     font-size: 20px;
     margin: 0 4%
+}
+
+.apresentacao__conteudo__texto strong {
+    color: rgb(245, 209, 3);
 }
 
 .apresentacao__links {
@@ -130,3 +134,111 @@ body {
     width: 15px; 
     height: auto;
 }
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80px; /* Ajuste conforme necessário */
+    height: 100vh;
+    background-color: #1b65b5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1000; /* Garante que fique acima do conteúdo */
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+    
+}
+
+.sidebar nav ul li {
+    margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #ade5f6;
+    font-family: "Montserrat", serif;
+    font-size: 22px;
+    writing-mode: vertical-rl;  /*Roda o texto na vertical */
+    transform: rotate(180deg);  /*Ajusta a rotação do texto */
+    transition: color 0.3s ease;
+}
+
+.sidebar nav ul li a:hover {
+    color: whitesmoke;
+}
+
+.informacoes-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 0px;
+    position:relative;
+}
+
+.experiencias-container, .educacao-container {
+    position: relative; /* Faz os elementos filhos se alinharem a eles */
+    display: inline-block;
+}
+
+.btn-experiencias, .btn-educacao {
+    background-color: rgb(245, 209, 3);
+    color: #030d9d;
+    font-family: "Montserrat", serif;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-experiencias:hover, .btn-educacao:hover {
+    background-color: white;
+    color: #030d9d;
+}
+
+.experiencias-conteudo, .educacao-conteudo {
+    display: none;
+    position: absolute;
+    background-color: #1b65b5;
+    color: #ade5f6;
+    width: 300px;
+    border-radius: 8px;
+    padding: 10px;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.experiencias-conteudo ul, .educacao-conteudo ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    text-align: left;
+    font-family: "Montserrat", serif;
+}
+
+/* O conteúdo só aparece quando o mouse está no botão ou dentro da caixa */
+.experiencias-container:hover .experiencias-conteudo,
+.experiencias-conteudo:hover {
+    display: block;
+}
+
+.educacao-container:hover .educacao-conteudo,
+.educacao-conteudo:hover {
+    display: block;
+}
+
+
+
