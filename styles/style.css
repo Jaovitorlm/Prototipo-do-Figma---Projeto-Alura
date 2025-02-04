@@ -325,11 +325,18 @@ body {
         font-size: 12px;
     }
 
-    /* Ajuste da raposinha para evitar rolagem */
     .raposinha {
-        width: 55px; /* Reduzida mais um pouco */
-        bottom: 2%;
-        right: 3%;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        width: 50px; /* Ajuste proporcional */
+        opacity: 0.5;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .raposinha:hover {
+        filter: brightness(1.5);
+        transform: scale(1.1);
     }
 
     /* Ajuste do espaço vazio na página */
