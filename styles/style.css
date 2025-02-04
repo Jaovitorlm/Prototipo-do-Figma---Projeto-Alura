@@ -328,8 +328,8 @@ body {
     /* Ajuste da raposinha para evitar rolagem */
     .raposinha {
         width: 55px; /* Reduzida mais um pouco */
-        bottom: 15px;
-        right: 15px;
+        bottom: 2%;
+        right: 3%;
     }
 
     /* Ajuste do espaço vazio na página */
